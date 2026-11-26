@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Labs · 일하며 남긴 기록 | 솔유니(Solve for X)</title>
+<meta name="description" content="결정 기록 307건, 날짜별 작업 보고 92건. 깨진 것과 원인, 다시 안 깨지게 바꾼 규칙을 함께 공개합니다.">
+<link rel="canonical" href="https://solve-for-x-labs.github.io/soluni-site/labs/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="솔유니 Solve for X">
+<meta property="og:title" content="Labs · 일하며 남긴 기록 | 솔유니(Solve for X)">
+<meta property="og:description" content="결정 기록 307건, 날짜별 작업 보고 92건. 깨진 것과 원인, 다시 안 깨지게 바꾼 규칙을 함께 공개합니다.">
+<meta property="og:url" content="https://solve-for-x-labs.github.io/soluni-site/labs/">
+<meta property="og:image" content="https://solve-for-x-labs.github.io/soluni-site/img/og.jpg">
+<meta name="theme-color" content="#0A0C0E">
+<link rel="icon" href="/soluni-site/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/soluni-site/fonts/pretendard.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/soluni-site/site.css">
+<meta name="robots" content="noindex">
+</head>
+<body>
+<div class="h"><header class="nav solid"><b><a href="/soluni-site/">솔유니</a></b><nav aria-label="주 메뉴"><a href="/soluni-site/#all">만든 것</a><a href="/soluni-site/solutions/security/">보안</a><a href="/soluni-site/labs/" aria-current=page>기록</a><a href="https://www.solve-for-x.net/contact/">문의</a></nav></header>
+<main class="page" id="main"><p class="kick">Labs</p><h1>일하며 남긴 기록</h1><p class="lead">성공만 적지 않습니다. 깨진 것과 원인, 다시 안 깨지게 바꾼 규칙을 같은 자리에 둡니다.</p>
+<div class="cnt"><div><b>307</b><span>결정 기록</span><em>번호 붙인 원장 · 11-26</em></div><div><b>92</b><span>날짜별 작업 보고</span><em>11-17 ~ 11-26</em></div><div><b>36</b><span>일하는 규칙 문서</span><em>사고 뒤 바꾼 것 포함</em></div><div><b>12</b><span>공유 지식</span><em>여러 작업 단위가 같이 쓰는 것</em></div></div>
+<div class="entries"><article><div class="meta">I-01 · 사고 · 11-13</div><h3>검사가 실패했는데 병합까지 됐다</h3><div><p>검사 결과를 tail로 넘겨 받자 마지막 줄만 남아 실패가 성공처럼 보였습니다. 바로 다음 수정에서 통과 상태로 되돌렸습니다.</p><p class="rule">바꾼 규칙: 결과는 파일로 받고, 검사 자체의 종료 코드로만 판정<small>병합 전 검사 · 모든 작업 단위 공통</small></p></div></article><article><div class="meta">I-02 · 사고 · 11-23</div><h3>시험 서버 6개가 2일 18시간 켜져 있었다</h3><div><p>시험이 끝난 뒤에도 서버가 남아 맥 코어 10개 중 약 7개를 쓰고 있었습니다.</p><p class="rule">바꾼 규칙: 서버를 띄운 시험은 끝날 때 직접 끈다<small>11-26 전체 점검에 반영</small></p></div></article><article><div class="meta">P-01 · 구조 · 11-26</div><h3>맥 한 대에서 여러 작업 단위가 부딪치지 않게</h3><div><p>작업 단위마다 포트 범위를 나눴습니다. 예: 보안 8200–8299, 브랜드 웹 8400–8499. iPhone 한 대는 잠금 파일로 한 작업 단위씩 씁니다.</p><p class="rule">결과: 같은 포트·같은 기기를 두 작업 단위가 동시에 쓰지 않음</p></div></article><article><div class="meta">K-01 · 지식 · 09-14</div><h3>작업 사본에서 .git은 폴더가 아니라 파일이다</h3><div><p>폴더만 세는 검사로는 작업 사본을 통째로 놓칩니다. 존재 여부로 확인하거나 git이 직접 주는 목록을 씁니다.</p><p class="rule">여러 작업 단위가 같이 쓰는 지식으로 등록</p></div></article></div>
+<p class="small">고객 이름·금액·비밀값은 싣지 않습니다. 숫자는 회사 기록 파일에서 직접 셌습니다.</p></main>
+<section class="end" id="contact"><h2>무엇이 반복되는지부터<br>알려 주세요.</h2><a class="mail" href="https://www.solve-for-x.net/contact/">상담 신청 →</a><div class="foot"><span>솔유니 · Solve for X · 회사 소개 <a href="https://www.solve-for-x.net">www.solve-for-x.net</a></span><span>사이트의 사진 일부는 생성형 AI로 만든 연출 이미지입니다.</span></div></section>
+</div>
+</body>
+</html>
