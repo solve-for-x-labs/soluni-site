@@ -205,3 +205,27 @@ dl.state dd{margin:0}
 }
 
 .sb .nw,.sbs .nw{white-space:nowrap;display:inline-block}
+
+/* 작업 현황판(그림) = 건물 그림(사장님 11-27 A, 지금 사이트와 같은 모양). 색·글자만 새 사이트(어두운 바탕·호박색)에 맞춤. */
+.sb h1.ttl{font-weight:600;font-size:clamp(40px,5.6vw,84px);line-height:1.08;letter-spacing:-.045em;margin:0;max-width:14em}
+.sbs .lab{display:flex;justify-content:space-between;gap:16px}
+.sbs .ttl{font-weight:600;font-size:clamp(30px,3.6vw,52px);line-height:1.15;letter-spacing:-.04em;margin:0 0 4vh}
+.bld{--amber:#F2A93B;margin:7vh 0 0}
+.bld figcaption{font-size:14px;font-weight:500;opacity:.6;margin:0 0 14px}
+.house{position:relative;display:grid;gap:10px;margin-top:34px;padding:clamp(14px,2.4vw,28px);background:#202027;border:1px solid rgba(244,241,234,.08)}
+.house .roof{position:absolute;left:-10px;right:-10px;top:-31px;height:30px;background:#202027;clip-path:polygon(8% 0,92% 0,100% 100%,0 100%)}
+.house .fl{display:grid;grid-template-columns:2.8em minmax(0,1fr);gap:10px;align-items:stretch}
+.house .fno{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;opacity:.5;border-right:1px solid rgba(244,241,234,.16);padding-right:6px}
+.house .rw{display:grid;gap:10px}
+.house .cell{display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-height:clamp(96px,13vh,140px);padding:16px 18px;background:#2A2A31;border:1px solid rgba(242,169,59,.5);box-shadow:inset 0 0 30px rgba(242,169,59,.12)}
+.house .cell b{font-size:clamp(17px,1.7vw,24px);font-weight:600;letter-spacing:-.025em;line-height:1.25}
+.house .st{display:inline-flex;align-items:center;gap:9px;font-size:15px;font-weight:600;color:var(--amber);white-space:nowrap}
+.house .dot{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px rgba(242,169,59,.55)}
+.house .cell.off{border-color:rgba(244,241,234,.12);box-shadow:none}
+.house .cell.off b{opacity:.5}.house .cell.off .st{color:#8A8F96}
+.house .cell.off .dot{background:none;border:1.5px solid #8A8F96;box-shadow:none;width:8px;height:8px}
+.house .ground{display:block;height:6px;margin:4px -24px 0;background:#5a544b}
+.bld.sm{margin-top:0}
+.bld.sm .cell{min-height:76px;padding:12px 14px;gap:10px}
+.bld.sm .cell b{font-size:16px}.bld.sm .st{font-size:13px}
+@media (max-width:640px){.house .cell{padding:12px;min-height:84px}.house .cell b{font-size:15px}.house .st{font-size:12px}.house .fl{grid-template-columns:2.2em minmax(0,1fr)}.sb h1.ttl{font-size:38px}.sbs .ttl{font-size:28px}}
