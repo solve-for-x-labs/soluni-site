@@ -51,6 +51,7 @@ h2.big em{font-style:normal;opacity:.35;font-weight:500}
 .shots figcaption{margin-top:18px}
 .shots figcaption b{display:block;font-size:clamp(1.6rem,2.4vw,2.4rem);font-weight:600;letter-spacing:-.03em}
 .shots figcaption span{display:block;font-size:15px;opacity:.7;margin-top:4px}
+.shots figcaption .dm{display:block;font-size:12px;opacity:.55;margin-top:6px;letter-spacing:0}
 .shots figcaption .st{display:flex;gap:14px;margin-top:10px;font-size:14px}
 .shots figcaption .st a{text-decoration:none;border-bottom:1px solid currentColor;opacity:.85}
 .rows{border-top:1px solid currentColor}
