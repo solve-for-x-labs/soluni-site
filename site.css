@@ -237,3 +237,14 @@ dl.state dd{margin:0}
 .rows i{white-space:normal;max-width:16em}
 .rows img.rt{grid-column:2/-1;width:auto;height:auto;max-width:min(100%,520px);max-height:480px;border-radius:8px;border:1px solid rgba(127,127,127,.35)}
 @media (max-width:640px){.wide{grid-template-columns:minmax(0,1fr);gap:28px}.rows img.rt{grid-column:1/-1}}
+/* 11-27 고객사 앱 제작 사례: 맡은 일·만든 것·결과 + 공개 화면 여러 장 */
+.rows>div.case{align-items:start}
+.rows .cf{display:grid;gap:8px;margin:14px 0 0;font-size:15.5px}
+.rows .cf>div{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:12px}
+.rows .cf dt{opacity:.6;font-size:14px}.rows .cf dd{margin:0;line-height:1.55}.rows .cf ul{margin:0;padding-left:1.1em}
+.rows .cs{grid-column:1/-1;list-style:none;margin:16px 0 0;padding:0 0 10px;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory}
+.rows .cs li{flex:0 0 auto;display:grid;gap:8px;scroll-snap-align:start}
+.rows .cs a{cursor:zoom-in}.rows .cs img{display:block;height:400px;width:auto;border-radius:12px;border:1px solid rgba(127,127,127,.35)}
+.rows .cs span{font-size:13px;opacity:.6}
+@media (max-width:640px){.rows .cf>div{grid-template-columns:minmax(0,1fr);gap:2px}.rows .cs img{height:320px}}
+.rows .bd p{margin:0}
