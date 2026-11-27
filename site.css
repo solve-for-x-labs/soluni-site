@@ -229,3 +229,11 @@ dl.state dd{margin:0}
 .bld.sm .cell{min-height:76px;padding:12px 14px;gap:10px}
 .bld.sm .cell b{font-size:16px}.bld.sm .st{font-size:13px}
 @media (max-width:640px){.house .cell{padding:12px;min-height:84px}.house .cell b{font-size:15px}.house .st{font-size:12px}.house .fl{grid-template-columns:2.2em minmax(0,1fr)}.sb h1.ttl{font-size:38px}.sbs .ttl{font-size:28px}}
+/* 11-27 XR 앱 실제 화면 · 고객사 앱 링크·화면 */
+.wide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.4vw}
+.wide figure{margin:0}.wide img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:8px;border:1px solid rgba(127,127,127,.35)}
+.wide a{cursor:zoom-in}.wide figcaption{display:grid;gap:4px;margin-top:14px}.wide figcaption b{font-size:20px;letter-spacing:-.02em}.wide figcaption span{opacity:.82;line-height:1.5}
+.rows .lk{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:8px;font-size:15px}.rows .lk a{text-decoration:underline;text-underline-offset:4px}
+.rows i{white-space:normal;max-width:16em}
+.rows img.rt{grid-column:2/-1;width:100%;max-width:520px;height:auto;border-radius:8px;border:1px solid rgba(127,127,127,.35)}
+@media (max-width:640px){.wide{grid-template-columns:minmax(0,1fr);gap:28px}.rows img.rt{grid-column:1/-1}}
